@@ -7,5 +7,18 @@ import "./assets/img/4geeks.ico";
 
 window.onload = function() {
   //write your code here
-  console.log("Hello Rigo from the console!");
+  let pronoun = ["la", "nuestra"];
+  let adj = ["magnifica", "extraordinaria"];
+  let noun = ["cabeza", "pala"];
+  let domain = [".es", ".com"];
+
+  pronoun.map(pronombre => {
+    adj.map(adjetivo => {
+      noun.map(nombre => {
+        domain.map(dominio => {
+          console.log(pronombre + adjetivo + nombre + dominio);
+        });
+      });
+    });
+  });
 };
